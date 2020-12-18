@@ -1,0 +1,9 @@
+@import '~bootstrap/scss/bootstrap';
+@import url(https://fonts.googleapis.com/css2?family=Karla&display=swap);
+
+$default-fonts: 'Karla', sans-serif, Arial;
+
+body,
+html {
+    font-family: $default-fonts;
+}
