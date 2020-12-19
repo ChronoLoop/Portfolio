@@ -1,20 +1,7 @@
 .nav-theme {
     background-color: #101018f8;
     font-size: 20px;
-}
-
-.animate-navbar {
     box-shadow: 1px 1px 1px #222;
-    animation: moveDown 0.5s ease-in-out;
-}
-
-@keyframes moveDown {
-    from {
-        transform: translateY(-5rem);
-    }
-    to {
-        transform: translateY(0rem);
-    }
 }
 
 .nav-items-container {
@@ -22,3 +9,14 @@
     justify-content: space-evenly;
     width: 70%;
 }
+.nav-items-container > a {
+    color: #c46b6c !important;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(196,107,108, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+    border-color:  #c46b6c !important;
+} 

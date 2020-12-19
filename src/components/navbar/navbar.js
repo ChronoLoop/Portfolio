@@ -5,8 +5,8 @@ import './navbar.scss';
 const MyNavbar = () => {
     return (
         <>
-            <Navbar fixed="top" variant="dark" expand="sm" className="animate-navbar nav-theme">
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar fixed="top" variant="dark" expand="sm" className="nav-theme">
+                <Navbar.Toggle className="custom-toggler" aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
                     <Nav className="nav-items-container">
                         <Nav.Link href="#home">Home</Nav.Link>
