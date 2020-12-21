@@ -2,8 +2,18 @@
 @import url(https://fonts.googleapis.com/css2?family=Karla&display=swap);
 
 $default-fonts: 'Karla', sans-serif, Arial;
+$primary-light: #fdfffc;
+$primary-dark:  #212630;
 
 body,
 html {
     font-family: $default-fonts;
+    height: 100%;
+    margin: 0;
+    padding: 0
+}
+
+.App{
+    height: 100vh;
+    position: relative;
 }
