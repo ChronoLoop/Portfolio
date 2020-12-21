@@ -12,7 +12,7 @@ const Title = () => {
                 <div className="sub">
                     <Typewriter
                         onInit={(typewriter) => {
-                            typewriter.typeString('Full Stack Web Developer').start();
+                            typewriter.pauseFor(300).typeString('Full Stack Web Developer').start();
                         }}
                         options={{
                             loop: false,
