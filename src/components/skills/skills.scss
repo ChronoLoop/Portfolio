@@ -1,5 +1,5 @@
 .skill-item {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     .icon {
         margin-right: 7px;
     }
@@ -7,12 +7,12 @@
     h2 {
         display: inline-flex;
         align-items: center;
-        font-size: 22px;
+        font-size: 1.4rem;
         @media screen and (min-width: 40em) {
-            font-size: 24px;
+            font-size: 1.6rem;
         }
         @media screen and (min-width: 54em) {
-            font-size: 26px;
+            font-size: 1.8rem;
         }
     }
     ul {
@@ -21,10 +21,19 @@
         flex-wrap: wrap;
         li {
             list-style-type: none;
-            font-size: 1.3rem;
             margin-right: 40px;
+            font-size: 1rem;
+            @media screen and (min-width: 40em) {
+                font-size: 1.2rem;
+            }
+            @media screen and (min-width: 54em) {
+                font-size: 1.4rem;
+            }
         }
     }
+}
+.skill-item:last-child {
+    margin-bottom: 0;
 }
 .responsive-image {
     width: 100%;

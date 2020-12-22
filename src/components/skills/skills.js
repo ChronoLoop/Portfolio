@@ -32,9 +32,9 @@ const SkillsComponent = () => {
     return (
         <section id="skills" className="dark section-padding">
             <h1 className="section-heading">Skills</h1>
-            <div className="d-flex flex-column flex-md-row">
+            <div className="d-flex flex-column flex-lg-row">
                 <Col
-                    md={6}
+                    lg={6}
                     className="d-flex justify-content-center align-items-center mb-4 mb-md-0 p-3"
                 >
                     <Image
@@ -43,21 +43,23 @@ const SkillsComponent = () => {
                         className="responsive-image"
                     />
                 </Col>
-                <Col md={6} className="d-flex flex-column justify-content-center p-3">
-                    {skills.map((skill, index) => {
-                        const Icon = skill.icon;
-                        const Items = skill.items.map((item) => <li>{item}</li>);
-                        return (
-                            // eslint-disable-next-line react/no-array-index-key
-                            <div className="skill-item" key={index}>
-                                <h2>
-                                    <Icon className="icon" />
-                                    {skill.heading}
-                                </h2>
-                                <ul>{Items}</ul>
-                            </div>
-                        );
-                    })}
+                <Col lg={6} className="d-flex flex-column justify-content-center p-3 ml-lg-5">
+                    <div>
+                        {skills.map((skill, index) => {
+                            const Icon = skill.icon;
+                            const Items = skill.items.map((item) => <li>{item}</li>);
+                            return (
+                                // eslint-disable-next-line react/no-array-index-key
+                                <div className="skill-item" key={index}>
+                                    <h2>
+                                        <Icon className="icon" />
+                                        {skill.heading}
+                                    </h2>
+                                    <ul>{Items}</ul>
+                                </div>
+                            );
+                        })}
+                    </div>
                 </Col>
             </div>
         </section>
