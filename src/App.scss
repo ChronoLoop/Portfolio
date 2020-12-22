@@ -1,19 +1,41 @@
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
 @import url(https://fonts.googleapis.com/css2?family=Karla&display=swap);
 
-$default-fonts: 'Karla', sans-serif, Arial;
+$default-fonts: "Karla", sans-serif, Arial;
 $primary-light: #fdfffc;
-$primary-dark:  #212630;
+$primary-dark: #212630;
 
 body,
 html {
     font-family: $default-fonts;
     height: 100%;
     margin: 0;
-    padding: 0
+    padding: 0;
+    scroll-behavior: smooth;
 }
 
-.App{
+.App {
     height: 100vh;
     position: relative;
+}
+section {
+    border-bottom: 1px solid #cdd2d7;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.dark {
+    color: $primary-dark;
+}
+
+.section-text-container {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.section-padding {
+    padding: 1.5rem !important;
+    @media (min-width: 992px) {
+        padding: 4rem !important;
+    }
 }

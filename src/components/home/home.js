@@ -1,14 +1,14 @@
 import React from 'react';
 import { Image } from 'react-bootstrap';
-import './hero.scss';
+import './home.scss';
 import Particles from '../particles/particles';
 import Title from '../title/title';
 import ProfileImage from '../../assets/img/profile/profile.jpg';
 import Social from '../social/social';
 
-const Hero = () => {
+const Home = () => {
     return (
-        <div id="home" className="position-relative">
+        <section id="home">
             <Particles />
             <div className="hero">
                 <div className="hero-body">
@@ -23,8 +23,8 @@ const Hero = () => {
                     <Social />
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
-export default Hero;
+export default Home;

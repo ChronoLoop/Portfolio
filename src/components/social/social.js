@@ -7,7 +7,7 @@ const Social = () => {
         <div className="my-2">
             <ul className="social-icons">
                 <li>
-                    <a href="mailto: kevinwang1036@gmail.com" className="icon-container email">
+                    <a href="mailto:kevinwang1036@gmail.com" className="icon-container email">
                         <FaEnvelope className="icon email-icon" />
                     </a>
                 </li>
