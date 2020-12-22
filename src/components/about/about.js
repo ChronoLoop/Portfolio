@@ -6,7 +6,7 @@ import UndrawImage from '../../assets/img/undraw/undraw_programming_2svr.svg';
 const about = () => {
     return (
         <section id="about" className="about dark section-padding">
-            <h1 className="text-center mb-3">About Me</h1>
+            <h1 className="section-heading">About Me</h1>
             <div className="d-flex flex-column-reverse flex-md-row">
                 <Col
                     md={6}

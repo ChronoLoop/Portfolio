@@ -1,5 +1,5 @@
 $primary-light: #fdfffc;
-$primary-dark:  #212630;
+$primary-dark: #212630;
 
 .hero {
     display: flex;
@@ -8,9 +8,8 @@ $primary-dark:  #212630;
     justify-content: center;
     background-color: $primary-dark;
     height: 100vh;
-    width: 100vw;
 }
-  
+
 .hero-body {
     display: flex;
     flex-direction: column;
@@ -26,7 +25,7 @@ $primary-dark:  #212630;
         padding: 8rem 1.5rem;
     }
 
-    hr{
+    hr {
         border: 0;
         height: 3px;
         background: #fff;
@@ -34,6 +33,6 @@ $primary-dark:  #212630;
     }
 }
 
-.profile-image{
+.profile-image {
     max-height: 250px;
 }

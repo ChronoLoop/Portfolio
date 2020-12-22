@@ -32,10 +32,11 @@ section {
     font-weight: 500;
     font-size: 1.3rem;
 }
+.section-heading {
+    text-align: center;
+    margin-bottom: 1rem !important;
+}
 
 .section-padding {
-    padding: 1.5rem !important;
-    @media (min-width: 992px) {
-        padding: 4rem !important;
-    }
+    padding: 3rem !important;
 }
