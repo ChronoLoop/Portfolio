@@ -3,7 +3,7 @@ import './skills.scss';
 import { Col, Image } from 'react-bootstrap';
 import { FaCode, FaDatabase, FaToolbox } from 'react-icons/fa';
 import { GoBrowser } from 'react-icons/go';
-import UndrawImage from '../../assets/img/undraw/undraw_code_review_l1q9.svg';
+import UndrawImage from '../../assets/img/undraw/undraw_code_review_l1q91.svg';
 
 const skills = [
     {
@@ -30,7 +30,7 @@ const skills = [
 
 const SkillsComponent = () => {
     return (
-        <section id="skills" className="dark section-padding">
+        <section id="skills" className="skills dark section-padding">
             <h1 className="section-heading">Skills</h1>
             <div className="d-flex flex-column flex-lg-row">
                 <Col

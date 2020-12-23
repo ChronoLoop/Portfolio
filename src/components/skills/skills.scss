@@ -1,3 +1,6 @@
+.skills {
+    background-color: #eceff4;
+}
 .skill-item {
     margin-bottom: 30px;
     .icon {
@@ -8,10 +11,10 @@
         display: inline-flex;
         align-items: center;
         font-size: 1.4rem;
-        @media screen and (min-width: 40em) {
-            font-size: 1.6rem;
+        @media screen and (min-width: 48em) {
+            font-size: 1.7rem;
         }
-        @media screen and (min-width: 54em) {
+        @media screen and (min-width: 62em) {
             font-size: 1.8rem;
         }
     }
@@ -22,11 +25,11 @@
         li {
             list-style-type: none;
             margin-right: 40px;
-            font-size: 1rem;
-            @media screen and (min-width: 40em) {
-                font-size: 1.2rem;
+            font-size: 1.1rem;
+            @media screen and (min-width: 48em) {
+                font-size: 1.3rem;
             }
-            @media screen and (min-width: 54em) {
+            @media screen and (min-width: 62em) {
                 font-size: 1.4rem;
             }
         }
@@ -34,8 +37,4 @@
 }
 .skill-item:last-child {
     margin-bottom: 0;
-}
-.responsive-image {
-    width: 100%;
-    height: 100%;
 }

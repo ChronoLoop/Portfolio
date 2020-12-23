@@ -28,7 +28,7 @@ const about = () => {
                 </Col>
                 <Col
                     lg={6}
-                    className="d-flex justify-content-center align-items-center mb-3 mb-md-0"
+                    className="d-flex justify-content-center align-items-center mb-3 mb-lg-0"
                 >
                     <Image fluid src={UndrawImage} alt="Undraw Programming" />
                 </Col>

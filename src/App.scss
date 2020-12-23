@@ -38,5 +38,22 @@ section {
 }
 
 .section-padding {
-    padding: 4rem !important;
+    padding: 2.5rem !important;
+    @media screen and (min-width: 36em) {
+        padding: 3rem !important;
+    }
+    @media screen and (min-width: 48em) {
+        padding: 3.5rem !important;
+    }
+    @media screen and (min-width: 62em) {
+        padding: 4rem !important;
+    }
+}
+.responsive-image {
+    width: 70%;
+    height: 70%;
+    @media screen and (min-width: 62em) {
+        width: 95%;
+        height: 95%;
+    }
 }
