@@ -35,7 +35,7 @@ const SkillsComponent = () => {
             <div className="d-flex flex-column flex-lg-row">
                 <Col
                     lg={6}
-                    className="d-flex justify-content-center align-items-center mb-4 mb-md-0 p-3"
+                    className="d-flex justify-content-center align-items-center mb-1 mb-md-0"
                 >
                     <Image
                         src={UndrawImage}

@@ -30,7 +30,13 @@ section {
 
 .section-text-container {
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    @media screen and (min-width: 48em) {
+        font-size: 1.2rem;
+    }
+    @media screen and (min-width: 62em) {
+        font-size: 1.3rem;
+    }
 }
 .section-heading {
     text-align: center;
@@ -50,10 +56,13 @@ section {
     }
 }
 .responsive-image {
+    @media screen and (max-width: 36em) {
+        min-width: 100%;
+    }
     width: 70%;
     height: 70%;
     @media screen and (min-width: 62em) {
-        width: 95%;
-        height: 95%;
+        width: 90%;
+        height: 90%;
     }
 }

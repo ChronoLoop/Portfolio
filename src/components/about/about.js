@@ -10,27 +10,34 @@ const about = () => {
             <div className="d-flex flex-column-reverse align-items-center flex-lg-row">
                 <Col
                     lg={6}
-                    className="d-flex flex-column justify-content-center section-text-container"
+                    className="d-flex flex-column justify-content-center align-items-center section-text-container"
                 >
-                    <p>
-                        I am a software engineer who graduated from the University of Florida in
-                        Computer Science. I have a passion for web development and am always open to
-                        chat.
-                    </p>
-                    <p>
-                        Currently, I am looking for my next adventure in software engineering to
-                        contribute meaningfully to a product I love and build up my skills to become
-                        the most effective and knowledgeable engineer I can be.
-                    </p>
-                    <p>
-                        You may find my most up-to-date resume <a href="#resume">here</a>.
-                    </p>
+                    <div>
+                        <p>
+                            I am a software engineer who graduated from the University of Florida in
+                            Computer Science. I have a passion for web development and am always
+                            open to chat.
+                        </p>
+                        <p>
+                            Currently, I am looking for my next adventure in software engineering to
+                            contribute meaningfully to a product I love and build up my skills to
+                            become the most effective and knowledgeable engineer I can be.
+                        </p>
+                        <p>
+                            You may find my most up-to-date resume <a href="#resume">here</a>.
+                        </p>
+                    </div>
                 </Col>
                 <Col
                     lg={6}
                     className="d-flex justify-content-center align-items-center mb-3 mb-lg-0"
                 >
-                    <Image fluid src={UndrawImage} alt="Undraw Programming" />
+                    <Image
+                        fluid
+                        src={UndrawImage}
+                        alt="Undraw Programming"
+                        className="responsive-image"
+                    />
                 </Col>
             </div>
         </section>

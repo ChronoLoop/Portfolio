@@ -1,0 +1,17 @@
+.project-card {
+    border-radius: 15px;
+    border: 0.25px solid rgb(204, 204, 204);
+    box-shadow: rgb(209, 209, 209) 0px 0px 3px;
+}
+.card-btn {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 20px;
+    border: 0.25px solid rgb(179, 179, 179);
+    box-shadow: rgb(190, 190, 190) 0px 0px 1px;
+}
+.card-btns-container {
+    .card-btn {
+        margin-right: 0.5em;
+    }
+}
