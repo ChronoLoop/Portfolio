@@ -10,8 +10,22 @@
     border: 0.25px solid rgb(179, 179, 179);
     box-shadow: rgb(190, 190, 190) 0px 0px 1px;
 }
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 1.25rem;
+}
+
 .card-btns-container {
+    width: 100%;
     .card-btn {
         margin-right: 0.5em;
     }
+}
+
+.card-icon {
+    width: 40px;
+    height: 40px;
 }
