@@ -47,7 +47,8 @@ const SkillsComponent = () => {
                     <div>
                         {skills.map((skill, index) => {
                             const Icon = skill.icon;
-                            const Items = skill.items.map((item) => <li>{item}</li>);
+                            // eslint-disable-next-line react/no-array-index-key
+                            const Items = skill.items.map((item, i) => <li key={i}>{item}</li>);
                             return (
                                 // eslint-disable-next-line react/no-array-index-key
                                 <div className="skill-item" key={index}>
