@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import './contact.scss';
-import { Col, Form, Container, Button } from 'react-bootstrap';
+import { Col, Form, Container, Button, Alert } from 'react-bootstrap';
 import { FaEnvelope, FaLinkedinIn } from 'react-icons/fa';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
+    const [showError, setShowError] = useState(false);
+    const [showSuccess, setShowSuccess] = useState(false);
     const [validated, setValidated] = useState(false);
     const [formData, setFormData] = useState({
         name: '',
@@ -20,8 +22,9 @@ const Contact = () => {
                 e.target,
                 'user_y7mncT0M4K0nUfhB2xhoc'
             );
+            setShowSuccess(true);
         } catch (err) {
-            console.log(err);
+            setShowError(!showError);
         }
     };
 
@@ -32,6 +35,8 @@ const Contact = () => {
             e.stopPropagation();
             return;
         }
+        setShowError(false);
+        setShowSuccess(false);
         sendEmail(e);
         setValidated(true);
     };
@@ -48,6 +53,17 @@ const Contact = () => {
                 Please feel free to drop a message below, and I will get in touch!
             </div>
             <Container fluid className="section-text-container p-4">
+                {showError ? (
+                    <Alert variant="danger" onClose={() => setShowError(false)} dismissible>
+                        An error has occured. Please try contacting me through email.
+                    </Alert>
+                ) : null}
+                {showSuccess ? (
+                    <Alert variant="success" onClose={() => setShowSuccess(false)} dismissible>
+                        Your message has been successfully sent. I will contact you very soon!
+                    </Alert>
+                ) : null}
+
                 <div className="d-flex flex-row flex-wrap">
                     <Col md={7} className="p-0 pr-3">
                         <Form noValidate validated={validated} onSubmit={handleSubmit}>
