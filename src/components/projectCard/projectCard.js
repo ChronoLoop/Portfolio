@@ -2,10 +2,15 @@ import React from 'react';
 import './projectCard.scss';
 import { Col, Card, Button, Image } from 'react-bootstrap';
 import { FaCode, FaArrowRight } from 'react-icons/fa';
+import { useInView } from 'react-intersection-observer';
 
-const ProjectCard = ({ projectInfo, index }) => {
+const ProjectCard = ({ projectInfo }) => {
+    const { ref, inView } = useInView({
+        threshold: 0.75,
+        triggerOnce: true
+    });
     return (
-        <Col md={12} xl={6} className="p-0 my-2" key={index}>
+        <Col md={12} xl={6} ref={ref} className={`p-0 my-2 animated ${inView ? 'fade-up' : ''}`}>
             <Card className="project-card h-100 justify-content-between" bg="light">
                 <Card.Header as="h4">{projectInfo.name}</Card.Header>
                 <div className="card-content">
@@ -37,8 +42,16 @@ const ProjectCard = ({ projectInfo, index }) => {
                 </div>
                 <Card.Footer>
                     <div className="d-flex flex-wrap justify-content-center">
-                        {projectInfo.icons.map((icon) => {
-                            return <Image src={icon} alt="icon" className="card-icon mr-3" />;
+                        {projectInfo.icons.map((icon, index) => {
+                            return (
+                                <Image
+                                    src={icon}
+                                    alt="icon"
+                                    className="card-icon mr-3"
+                                    // eslint-disable-next-line react/no-array-index-key
+                                    key={index}
+                                />
+                            );
                         })}
                     </div>
                 </Card.Footer>

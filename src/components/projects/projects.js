@@ -44,7 +44,8 @@ const ProjectsComponent = () => {
             <h1 className="section-heading">Projects</h1>
             <CardDeck>
                 {Projects.map((project, index) => {
-                    return <ProjectCard projectInfo={project} index={index} />;
+                    // eslint-disable-next-line react/no-array-index-key
+                    return <ProjectCard projectInfo={project} key={index} />;
                 })}
             </CardDeck>
         </section>

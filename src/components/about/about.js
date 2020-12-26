@@ -1,16 +1,25 @@
 import React from 'react';
 import { Image, Col } from 'react-bootstrap';
+import { useInView } from 'react-intersection-observer';
 import './about.scss';
 import UndrawImage from '../../assets/img/undraw/undraw_programming_2svr.svg';
 
 const about = () => {
+    const { ref, inView } = useInView({
+        threshold: 0.5,
+        triggerOnce: true
+    });
+
     return (
         <section id="about" className="about dark section-padding">
             <h1 className="section-heading">About Me</h1>
             <div className="d-flex flex-column-reverse align-items-center flex-lg-row">
                 <Col
+                    ref={ref}
                     lg={6}
-                    className="d-flex flex-column justify-content-center align-items-center section-text-container"
+                    className={`about-text-container animated section-text-container ${
+                        inView ? 'fade-in-right' : ''
+                    }`}
                 >
                     <div>
                         <p>

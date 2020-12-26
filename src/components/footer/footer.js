@@ -4,7 +4,7 @@ import Socials from '../social/social';
 
 const Footer = () => {
     return (
-        <footer id="projects" className="footer">
+        <footer className="footer">
             <div className="d-flex flex-column justify-content-center align-items-center">
                 <Socials footer />
                 <div className="text-muted">© Copyright 2020 Kevin Wang</div>

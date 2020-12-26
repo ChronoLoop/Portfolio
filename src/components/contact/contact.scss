@@ -33,3 +33,9 @@
 .contact-link:hover {
     color: #6b63ffc9;
 }
+
+.contact-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

@@ -4,6 +4,7 @@ import { Col, Image } from 'react-bootstrap';
 import { FaCode, FaDatabase, FaToolbox } from 'react-icons/fa';
 import { GoBrowser } from 'react-icons/go';
 import UndrawImage from '../../assets/img/undraw/undraw_code_review_l1q91.svg';
+import Skill from './skillComponent';
 
 const skills = [
     {
@@ -46,19 +47,8 @@ const SkillsComponent = () => {
                 <Col lg={6} className="d-flex flex-column justify-content-center p-3 ml-lg-5">
                     <div>
                         {skills.map((skill, index) => {
-                            const Icon = skill.icon;
                             // eslint-disable-next-line react/no-array-index-key
-                            const Items = skill.items.map((item, i) => <li key={i}>{item}</li>);
-                            return (
-                                // eslint-disable-next-line react/no-array-index-key
-                                <div className="skill-item" key={index}>
-                                    <h2>
-                                        <Icon className="icon" />
-                                        {skill.heading}
-                                    </h2>
-                                    <ul>{Items}</ul>
-                                </div>
-                            );
+                            return <Skill skill={skill} key={index} />;
                         })}
                     </div>
                 </Col>

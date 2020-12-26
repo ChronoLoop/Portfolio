@@ -23,3 +23,8 @@ yarn-debug.log*
 yarn-error.log*
 notes.txt
 .eslintcache
+.netilify
+.vscode
+
+# Local Netlify folder
+.netlify

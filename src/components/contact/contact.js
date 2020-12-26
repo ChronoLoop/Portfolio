@@ -14,12 +14,20 @@ const Contact = () => {
         message: ''
     });
 
-    const sendEmail = async (e) => {
+    const resetForm = () => {
+        setFormData({
+            name: '',
+            email: '',
+            message: ''
+        });
+    };
+
+    const sendEmail = async (data) => {
         try {
-            await emailjs.sendForm(
+            await emailjs.send(
                 'service_r9u5wuc',
                 'template_vkvcwvc',
-                e.target,
+                data,
                 'user_y7mncT0M4K0nUfhB2xhoc'
             );
             setShowSuccess(true);
@@ -31,14 +39,17 @@ const Contact = () => {
     const handleSubmit = (e) => {
         const form = e.currentTarget;
         e.preventDefault();
+
         if (form.checkValidity() === false) {
             e.stopPropagation();
-            return;
+            setValidated(true);
+        } else {
+            setShowError(false);
+            setShowSuccess(false);
+            sendEmail({ ...formData });
+            setValidated(false);
+            resetForm();
         }
-        setShowError(false);
-        setShowSuccess(false);
-        sendEmail(e);
-        setValidated(true);
     };
 
     const handleChange = (e) => {
@@ -64,7 +75,7 @@ const Contact = () => {
                     </Alert>
                 ) : null}
 
-                <div className="d-flex flex-row flex-wrap">
+                <div className="contact-content">
                     <Col md={7} className="p-0 pr-3">
                         <Form noValidate validated={validated} onSubmit={handleSubmit}>
                             <div>
