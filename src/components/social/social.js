@@ -2,10 +2,10 @@ import React from 'react';
 import { FaEnvelope, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import './social.scss';
 
-const Social = () => {
+const Social = ({ footer }) => {
     return (
         <div className="my-2">
-            <ul className="social-icons">
+            <ul className={`social-icons ${footer ? 'footer-icons' : ''}`}>
                 <li>
                     <a href="mailto:kevinwang1036@gmail.com" className="icon-container email">
                         <FaEnvelope className="icon email-icon" />

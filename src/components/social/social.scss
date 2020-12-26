@@ -1,5 +1,6 @@
 $primary-light: #fdfffc;
 $primary-dark: #212630;
+$muted-color: #6c757d;
 
 .social-icons {
     display: flex;
@@ -36,6 +37,12 @@ $primary-dark: #212630;
         .github-icon {
             color: $primary-dark;
         }
+        .linkedin-icon {
+            color: $primary-light;
+        }
+        .email-icon {
+            color: $primary-light;
+        }
     }
     @keyframes Icon-Spinning-Animation {
         0% {
@@ -66,5 +73,19 @@ $primary-dark: #212630;
     }
     .icon-container.github::before {
         background: $primary-light !important;
+    }
+}
+
+.footer-icons {
+    .icon-container {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        border: 2px solid $muted-color;
+        overflow: hidden;
+        box-shadow: 0px 5px 11px 0px rgba(0, 0, 0, 0.18);
+        .icon {
+            color: $muted-color;
+        }
     }
 }

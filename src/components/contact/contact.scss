@@ -1,4 +1,35 @@
 .contact {
     background-color: #212630;
     color: #fdfffc;
+    border-bottom: none !important;
+}
+
+.form-btn {
+    background-color: #6c63ff !important;
+    border-color: #0f0f0f !important;
+}
+.form-btn:hover {
+    background-color: #6b63ff77 !important;
+    border-color: #6c63ff !important;
+}
+.form-btn:active {
+    background-color: #6b63ff6b !important;
+    border: 2px solid #6c63ff !important;
+    box-shadow: none !important;
+}
+.form-btn:focus {
+    background-color: #6b63ff6b !important;
+    outline: none;
+    box-shadow: none !important;
+}
+
+.contact-container {
+    display: inline-flex;
+    align-items: center;
+}
+.contact-link {
+    color: #fdfffc;
+}
+.contact-link:hover {
+    color: #6b63ffc9;
 }

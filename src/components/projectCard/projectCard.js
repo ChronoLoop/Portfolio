@@ -3,9 +3,9 @@ import './projectCard.scss';
 import { Col, Card, Button, Image } from 'react-bootstrap';
 import { FaCode, FaArrowRight } from 'react-icons/fa';
 
-const ProjectCard = ({ projectInfo }) => {
+const ProjectCard = ({ projectInfo, index }) => {
     return (
-        <Col md={12} xl={6} className="p-0 my-2">
+        <Col md={12} xl={6} className="p-0 my-2" key={index}>
             <Card className="project-card h-100 justify-content-between" bg="light">
                 <Card.Header as="h4">{projectInfo.name}</Card.Header>
                 <div className="card-content">

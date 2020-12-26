@@ -43,8 +43,8 @@ const ProjectsComponent = () => {
         <section id="projects" className="project section-padding">
             <h1 className="section-heading">Projects</h1>
             <CardDeck>
-                {Projects.map((project) => {
-                    return <ProjectCard projectInfo={project} />;
+                {Projects.map((project, index) => {
+                    return <ProjectCard projectInfo={project} index={index} />;
                 })}
             </CardDeck>
         </section>
