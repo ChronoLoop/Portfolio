@@ -76,7 +76,7 @@ const Contact = () => {
                 ) : null}
 
                 <div className="contact-content">
-                    <Col md={7} className="p-0 pr-3">
+                    <Col md={7} className="p-0 pr-md-3">
                         <Form noValidate validated={validated} onSubmit={handleSubmit}>
                             <div>
                                 <Form.Label className="m-0 mt-1">Name:</Form.Label>
