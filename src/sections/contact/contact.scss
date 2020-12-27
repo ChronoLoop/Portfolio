@@ -24,8 +24,10 @@
 }
 
 .contact-container {
-    display: inline-flex;
-    align-items: center;
+    h5 {
+        display: inline-flex;
+        align-items: center;
+    }
 }
 .contact-link {
     color: #fdfffc;
