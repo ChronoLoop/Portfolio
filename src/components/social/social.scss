@@ -32,7 +32,8 @@ $muted-color: #6c757d;
     //icon spin animation
     .icon-container:hover {
         .icon {
-            animation: Icon-Spinning-Animation 0.5s;
+            transition: 0.5s;
+            transform: rotate(360deg);
         }
         .github-icon {
             color: $primary-dark;
@@ -42,14 +43,6 @@ $muted-color: #6c757d;
         }
         .email-icon {
             color: $primary-light;
-        }
-    }
-    @keyframes Icon-Spinning-Animation {
-        0% {
-            transform: rotate(0);
-        }
-        100% {
-            transform: rotate(360deg);
         }
     }
     //icon-container background animation

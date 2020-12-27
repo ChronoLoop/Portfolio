@@ -82,11 +82,11 @@ section {
 }
 @keyframes fade-in-right {
     from {
-        transform: translate3d(-100px, 0, 0);
+        transform: translateX(-100px);
     }
 
     to {
-        transform: translate3d(0, 0, 0);
+        transform: translateX(0);
         opacity: 1;
     }
 }
@@ -96,11 +96,11 @@ section {
 }
 @keyframes fade-in-left {
     from {
-        transform: translate3d(100px, 0, 0);
+        transform: translateX(100px);
     }
 
     to {
-        transform: translate3d(0, 0, 0);
+        transform: translateX(0);
         opacity: 1;
     }
 }
@@ -110,11 +110,11 @@ section {
 }
 @keyframes fade-up {
     from {
-        transform: translate3d(0, 100px, 0);
+        transform: translateY(100px);
     }
 
     to {
-        transform: translate3d(0, 0, 0);
+        transform: translateY(0);
         opacity: 1;
     }
 }
