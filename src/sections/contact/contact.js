@@ -14,7 +14,7 @@ const Contact = () => {
     const emailSuccessHandler = () => {
         setShowSuccess(true);
     };
-    const validFormHandler = () => {
+    const resetAlerts = () => {
         setShowError(false);
         setShowSuccess(false);
     };
@@ -42,7 +42,7 @@ const Contact = () => {
                         <ContactForm
                             emailErrorHandler={emailErrorHandler}
                             emailSuccessHandler={emailSuccessHandler}
-                            validFormHandler={validFormHandler}
+                            resetAlerts={resetAlerts}
                         />
                     </Col>
                     <Col

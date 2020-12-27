@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import emailjs from 'emailjs-com';
 
-const ContactForm = ({ emailErrorHandler, emailSuccessHandler, validFormHandler }) => {
+const ContactForm = ({ emailErrorHandler, emailSuccessHandler, resetAlerts }) => {
     const [validated, setValidated] = useState(false);
     const [formData, setFormData] = useState({
         name: '',
@@ -35,12 +35,11 @@ const ContactForm = ({ emailErrorHandler, emailSuccessHandler, validFormHandler 
     const handleSubmit = (e) => {
         const form = e.currentTarget;
         e.preventDefault();
-
+        resetAlerts();
         if (form.checkValidity() === false) {
             e.stopPropagation();
             setValidated(true);
         } else {
-            validFormHandler();
             sendEmail({ ...formData });
             setValidated(false);
             resetForm();
