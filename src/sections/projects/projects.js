@@ -1,7 +1,7 @@
 import React from 'react';
 import { CardDeck } from 'react-bootstrap';
 import './projects.scss';
-import ProjectCard from '../projectCard/projectCard';
+import ProjectCard from '../../components/projectCard/projectCard';
 // icons
 import webIcons from '../../assets/img/skills/html-css-js.svg';
 import reactIcon from '../../assets/img/skills/react.svg';
@@ -41,7 +41,7 @@ const Projects = [
 const ProjectsComponent = () => {
     return (
         <section id="projects" className="project section-padding">
-            <h1 className="section-heading">Projects</h1>
+            <h1>Projects</h1>
             <CardDeck>
                 {Projects.map((project, index) => {
                     // eslint-disable-next-line react/no-array-index-key

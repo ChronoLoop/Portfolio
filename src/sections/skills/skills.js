@@ -4,7 +4,7 @@ import { Col, Image } from 'react-bootstrap';
 import { FaCode, FaDatabase, FaToolbox } from 'react-icons/fa';
 import { GoBrowser } from 'react-icons/go';
 import UndrawImage from '../../assets/img/undraw/undraw_code_review_l1q91.svg';
-import Skill from './skillComponent';
+import Skill from '../../components/skill/skill';
 
 const skills = [
     {
@@ -31,20 +31,17 @@ const skills = [
 
 const SkillsComponent = () => {
     return (
-        <section id="skills" className="skills dark section-padding">
-            <h1 className="section-heading">Skills</h1>
-            <div className="d-flex flex-column flex-lg-row">
-                <Col
-                    lg={6}
-                    className="d-flex justify-content-center align-items-center mb-1 mb-md-0"
-                >
+        <section id="skills" className="skills section-padding">
+            <h1>Skills</h1>
+            <div className="two-column-container flex-column flex-lg-row">
+                <Col lg={6} className="flex-center-content">
                     <Image
                         src={UndrawImage}
                         alt="Undraw Programming"
                         className="responsive-image"
                     />
                 </Col>
-                <Col lg={6} className="d-flex flex-column justify-content-center p-3 ml-lg-5">
+                <Col lg={6} className="p-3">
                     <div>
                         {skills.map((skill, index) => {
                             // eslint-disable-next-line react/no-array-index-key

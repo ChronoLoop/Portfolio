@@ -59,11 +59,11 @@ const Contact = () => {
 
     return (
         <section id="contact" className="contact section-padding">
-            <h1 className="section-heading mb-1">Contact</h1>
-            <div className="section-text-container text-center mb-4">
+            <h1>Contact</h1>
+            <div className="section-text text-center mb-4">
                 Please feel free to drop a message below, and I will get in touch!
             </div>
-            <Container fluid className="section-text-container p-4">
+            <Container fluid className="section-text p-4">
                 {showError ? (
                     <Alert variant="danger" onClose={() => setShowError(false)} dismissible>
                         An error has occured. Please try contacting me through email.

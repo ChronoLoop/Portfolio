@@ -1,10 +1,10 @@
 import React from 'react';
 import { Image } from 'react-bootstrap';
 import './home.scss';
-import Particles from '../particles/particles';
-import Title from '../title/title';
+import Particles from '../../components/particles/particles';
+import Title from '../../components/title/title';
 import ProfileImage from '../../assets/img/profile/profile.jpg';
-import Social from '../social/social';
+import Social from '../../components/social/social';
 
 const Home = () => {
     return (

@@ -11,17 +11,11 @@ const about = () => {
     });
 
     return (
-        <section id="about" className="about dark section-padding">
-            <h1 className="section-heading">About Me</h1>
-            <div className="d-flex flex-column-reverse align-items-center flex-lg-row">
-                <Col
-                    ref={ref}
-                    lg={6}
-                    className={`about-text-container animated section-text-container ${
-                        inView ? 'fade-in-right' : ''
-                    }`}
-                >
-                    <div>
+        <section id="about" className="about section-padding">
+            <h1>About Me</h1>
+            <div className="two-column-container flex-column-reverse flex-lg-row">
+                <Col ref={ref} lg={6} className={`animated ${inView ? 'fade-in-right' : ''}`}>
+                    <div className="section-text">
                         <p>
                             I am a software engineer who graduated from the University of Florida in
                             Computer Science. I have a passion for web development and am always
@@ -37,10 +31,7 @@ const about = () => {
                         </p>
                     </div>
                 </Col>
-                <Col
-                    lg={6}
-                    className="d-flex justify-content-center align-items-center mb-3 mb-lg-0"
-                >
+                <Col lg={6} className="flex-center-content mb-3 mb-lg-0">
                     <Image
                         fluid
                         src={UndrawImage}

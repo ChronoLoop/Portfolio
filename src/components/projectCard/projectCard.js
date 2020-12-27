@@ -11,21 +11,24 @@ const ProjectCard = ({ projectInfo }) => {
     });
     return (
         <Col md={12} xl={6} ref={ref} className={`p-0 my-2 animated ${inView ? 'fade-up' : ''}`}>
-            <Card className="project-card h-100 justify-content-between" bg="light">
+            <Card className="project-card" bg="light">
                 <Card.Header as="h4">{projectInfo.name}</Card.Header>
                 <div className="card-content">
                     <p>{projectInfo.information}</p>
                     <div className="card-btns-container">
-                        <Button
-                            variant="light"
-                            href={projectInfo.github}
-                            rel="noopener noreferrer"
-                            target="_blank"
-                            className="card-btn"
-                        >
-                            <FaCode className="mr-1" />
-                            Code
-                        </Button>
+                        {projectInfo.github ? (
+                            <Button
+                                variant="light"
+                                href={projectInfo.github}
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                className="card-btn"
+                            >
+                                <FaCode className="mr-1" />
+                                Code
+                            </Button>
+                        ) : null}
+
                         {projectInfo.visit ? (
                             <Button
                                 variant="light"
@@ -41,7 +44,7 @@ const ProjectCard = ({ projectInfo }) => {
                     </div>
                 </div>
                 <Card.Footer>
-                    <div className="d-flex flex-wrap justify-content-center">
+                    <div className="flex-center-content">
                         {projectInfo.icons.map((icon, index) => {
                             return (
                                 <Image
