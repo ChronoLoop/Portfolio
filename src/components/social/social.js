@@ -13,7 +13,7 @@ const Social = ({ footer }) => {
                 </li>
                 <li>
                     <a
-                        href="https://github.com/ikevinws"
+                        href="https://www.github.com/ikevinws"
                         rel="noopener noreferrer"
                         target="_blank"
                         className="icon-container github"
@@ -23,7 +23,7 @@ const Social = ({ footer }) => {
                 </li>
                 <li>
                     <a
-                        href="https://linkedin.com/in/ikevinwang"
+                        href="https://www.linkedin.com/in/ikevinwang"
                         rel="noopener noreferrer"
                         target="_blank"
                         className="icon-container linkedin"

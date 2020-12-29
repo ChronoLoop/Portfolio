@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './contact.scss';
-import { Col, Container, Alert } from 'react-bootstrap';
+import { Container, Alert } from 'react-bootstrap';
 import { FaEnvelope, FaLinkedinIn } from 'react-icons/fa';
 import ContactForm from '../../components/contactForm/contactForm';
 
@@ -25,63 +25,57 @@ const Contact = () => {
             <div className="section-text text-center mb-4">
                 Please feel free to drop a message below, and I will get in touch!
             </div>
-            <Container className="section-text mt-1">
-                {showError ? (
-                    <Alert variant="danger" onClose={() => setShowError(false)} dismissible>
-                        An error has occured. Please try contacting me through email.
-                    </Alert>
-                ) : null}
-                {showSuccess ? (
-                    <Alert variant="success" onClose={() => setShowSuccess(false)} dismissible>
-                        Your message has been successfully sent. I will contact you very soon!
-                    </Alert>
-                ) : null}
-
-                <div className="contact-content">
-                    <Col md={7} className="p-0 pr-md-3">
-                        <ContactForm
-                            emailErrorHandler={emailErrorHandler}
-                            emailSuccessHandler={emailSuccessHandler}
-                            resetAlerts={resetAlerts}
-                        />
-                    </Col>
-                    <Col
-                        md={5}
-                        className="d-flex flex-column justify-content-md-center align-items-md-center p-0 mt-3 mt-md-0"
-                    >
-                        <div className="contact-container mb-3">
-                            <h5>
-                                <FaEnvelope className="mr-1" />
-                                Email
-                            </h5>
-                            <div>
-                                <a
-                                    href="mailto:kevinwang1036@gmail.com"
-                                    rel="noopener noreferrer"
-                                    target="_blank"
-                                    className="contact-link"
-                                >
-                                    kevinwang1036@gmail.com
-                                </a>
-                            </div>
+            <Container className="contact-content section-text mt-1">
+                <div className="w-100">
+                    {showError ? (
+                        <Alert variant="danger" onClose={() => setShowError(false)} dismissible>
+                            An error has occured. Please try contacting me through email.
+                        </Alert>
+                    ) : null}
+                    {showSuccess ? (
+                        <Alert variant="success" onClose={() => setShowSuccess(false)} dismissible>
+                            Your message has been successfully sent. I will contact you very soon!
+                        </Alert>
+                    ) : null}
+                    <ContactForm
+                        emailErrorHandler={emailErrorHandler}
+                        emailSuccessHandler={emailSuccessHandler}
+                        resetAlerts={resetAlerts}
+                    />
+                </div>
+                <div className="d-flex flex-column mt-4 w-100">
+                    <div className="contact-container mb-3">
+                        <h5>
+                            <FaEnvelope className="mr-1" />
+                            Email:
+                        </h5>
+                        <div>
+                            <a
+                                href="mailto:kevinwang1036@gmail.com"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                className="contact-link"
+                            >
+                                kevinwang1036@gmail.com
+                            </a>
                         </div>
-                        <div className="contact-container">
-                            <h5>
-                                <FaLinkedinIn className="mr-1" />
-                                Linkedin
-                            </h5>
-                            <div>
-                                <a
-                                    href="https://linkedin.com/in/ikevinwang"
-                                    rel="noopener noreferrer"
-                                    target="_blank"
-                                    className="contact-link"
-                                >
-                                    linkedin.com/in/ikevinwang
-                                </a>
-                            </div>
+                    </div>
+                    <div className="contact-container">
+                        <h5>
+                            <FaLinkedinIn className="mr-1" />
+                            Linkedin
+                        </h5>
+                        <div>
+                            <a
+                                href="https://www.linkedin.com/in/ikevinwang"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                className="contact-link"
+                            >
+                                https://www.linkedin.com/in/ikevinwang
+                            </a>
                         </div>
-                    </Col>
+                    </div>
                 </div>
             </Container>
         </section>

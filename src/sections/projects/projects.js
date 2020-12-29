@@ -17,7 +17,7 @@ const Projects = [
         name: 'Tower of Hanoi',
         information:
             'A full-stack (MERN) web app for the Tower of Hanoi game where players can create accounts, which will allow scores to be posted onto a leaderboard. The game was built in Unity3D and exported as a WebGL.',
-        github: 'https://github.com/ikevinws/TowerOfHanoi_WebApp',
+        github: 'https://www.github.com/ikevinws/TowerOfHanoi_WebApp',
         visit: 'https://tower-of-hanoi-kevin.herokuapp.com',
         icons: [
             unityIcon,
@@ -34,7 +34,7 @@ const Projects = [
         name: 'MyMovieList',
         information:
             'MyMovieList is a simple movie database web app with plot summaries, ratings, and reviews. (In Progress)',
-        github: 'https://github.com/ikevinws/MyMovieList',
+        github: 'https://www.github.com/ikevinws/MyMovieList',
         icons: [reactIcon, nodejsIcon, express, mongodbIcon, webIcons]
     }
 ];

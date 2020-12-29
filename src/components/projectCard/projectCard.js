@@ -44,7 +44,7 @@ const ProjectCard = ({ projectInfo }) => {
                     </div>
                 </div>
                 <Card.Footer>
-                    <div className="flex-center-content">
+                    <div className="flex-center-content flex-wrap">
                         {projectInfo.icons.map((icon, index) => {
                             return (
                                 <Image
