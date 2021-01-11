@@ -33,9 +33,10 @@ const Projects = [
     {
         name: 'MyMovieList',
         information:
-            'MyMovieList is a simple movie database web app with plot summaries, ratings, and reviews. (In Progress)',
+            'MyMovieList is a simple database web app where users can search for movies with plot summaries, ratings, and reviews. (In Progress)',
         github: 'https://www.github.com/ikevinws/MyMovieList',
-        icons: [reactIcon, nodejsIcon, express, mongodbIcon, webIcons]
+        visit: 'https://mymovielist-kevin.herokuapp.com/',
+        icons: [reactIcon, nodejsIcon, express, mongodbIcon, herokuIcon, webIcons]
     }
 ];
 const ProjectsComponent = () => {
