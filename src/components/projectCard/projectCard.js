@@ -4,7 +4,7 @@ import { Col, Card, Button, Image } from 'react-bootstrap';
 import { FaCode, FaArrowRight } from 'react-icons/fa';
 import { useInView } from 'react-intersection-observer';
 
-const ProjectCard = ({ projectInfo }) => {
+const ProjectCard = ({ project }) => {
     const { ref, inView } = useInView({
         threshold: 0.75,
         triggerOnce: true
@@ -12,14 +12,14 @@ const ProjectCard = ({ projectInfo }) => {
     return (
         <Col md={12} xl={6} ref={ref} className={`p-0 my-2 animated ${inView ? 'fade-up' : ''}`}>
             <Card className="project-card" bg="light">
-                <Card.Header as="h4">{projectInfo.name}</Card.Header>
+                <Card.Header as="h4">{project.name}</Card.Header>
                 <div className="card-content">
-                    <p>{projectInfo.information}</p>
+                    <p>{project.description}</p>
                     <div className="card-btns-container">
-                        {projectInfo.github ? (
+                        {project.github ? (
                             <Button
                                 variant="light"
-                                href={projectInfo.github}
+                                href={project.github}
                                 rel="noopener noreferrer"
                                 target="_blank"
                                 className="card-btn"
@@ -29,10 +29,10 @@ const ProjectCard = ({ projectInfo }) => {
                             </Button>
                         ) : null}
 
-                        {projectInfo.visit ? (
+                        {project.visit ? (
                             <Button
                                 variant="light"
-                                href={projectInfo.visit}
+                                href={project.visit}
                                 rel="noopener noreferrer"
                                 target="_blank"
                                 className="card-btn"
@@ -45,7 +45,7 @@ const ProjectCard = ({ projectInfo }) => {
                 </div>
                 <Card.Footer>
                     <div className="flex-center-content flex-wrap">
-                        {projectInfo.icons.map((icon, index) => {
+                        {project.icons.map((icon, index) => {
                             return (
                                 <Image
                                     src={icon}

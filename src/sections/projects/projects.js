@@ -15,7 +15,7 @@ import csharpIcon from '../../assets/img/skills/c-sharp.svg';
 const Projects = [
     {
         name: 'Tower of Hanoi',
-        information:
+        description:
             'A full-stack (MERN) web app for the Tower of Hanoi game where players can create accounts, which will allow scores to be posted onto a leaderboard. The game was built in Unity3D and exported as a WebGL.',
         github: 'https://www.github.com/ikevinws/TowerOfHanoi_WebApp',
         visit: 'https://tower-of-hanoi-kevin.herokuapp.com',
@@ -32,8 +32,8 @@ const Projects = [
     },
     {
         name: 'MyMovieList',
-        information:
-            'MyMovieList is a simple database web app where users can search for movies with plot summaries, ratings, and reviews. (In Progress)',
+        description:
+            'MyMovieList is a simple database web app where users can search for movies and review and rate movies, and admins can add, update, or delete movies.',
         github: 'https://www.github.com/ikevinws/MyMovieList',
         visit: 'https://mymovielist-kevin.herokuapp.com/',
         icons: [reactIcon, nodejsIcon, express, mongodbIcon, herokuIcon, webIcons]
@@ -46,7 +46,7 @@ const ProjectsComponent = () => {
             <CardDeck>
                 {Projects.map((project, index) => {
                     // eslint-disable-next-line react/no-array-index-key
-                    return <ProjectCard projectInfo={project} key={index} />;
+                    return <ProjectCard project={project} key={index} />;
                 })}
             </CardDeck>
         </section>
