@@ -53,7 +53,7 @@ const ContactForm = ({ emailErrorHandler, emailSuccessHandler, resetAlerts }) =>
 
     return (
         <Form noValidate validated={validated} onSubmit={handleSubmit}>
-            <div>
+            <Form.Group controlId="formName">
                 <Form.Label className="m-0 mt-1">Name:</Form.Label>
                 <Form.Control
                     type="text"
@@ -63,8 +63,8 @@ const ContactForm = ({ emailErrorHandler, emailSuccessHandler, resetAlerts }) =>
                     onChange={handleChange}
                     required
                 />
-            </div>
-            <div>
+            </Form.Group>
+            <Form.Group controlId="formEmail">
                 <Form.Label className="m-0 mt-1">Email:</Form.Label>
                 <Form.Control
                     type="email"
@@ -74,8 +74,8 @@ const ContactForm = ({ emailErrorHandler, emailSuccessHandler, resetAlerts }) =>
                     onChange={handleChange}
                     required
                 />
-            </div>
-            <div>
+            </Form.Group>
+            <Form.Group controlId="formMessage">
                 <Form.Label className="m-0 mt-1">Message:</Form.Label>
                 <Form.Control
                     as="textarea"
@@ -86,7 +86,7 @@ const ContactForm = ({ emailErrorHandler, emailSuccessHandler, resetAlerts }) =>
                     onChange={handleChange}
                     required
                 />
-            </div>
+            </Form.Group>
             <Button type="submit" className="form-btn mt-2">
                 Send Message
             </Button>
