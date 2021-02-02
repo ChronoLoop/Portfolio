@@ -20,12 +20,12 @@ const skills = [
     {
         heading: 'Back-end Development',
         icon: FaDatabase,
-        items: ['Node.JS', 'Express', 'MongoDB', 'SQL']
+        items: ['Node.JS', 'Express', 'Passport.JS', 'MongoDB', 'SQL']
     },
     {
         heading: 'Tools',
         icon: FaToolbox,
-        items: ['Git', 'Bash', 'Unity', 'Heroku']
+        items: ['Git', 'Bash', 'Unity', 'Heroku', 'Netlify']
     }
 ];
 
