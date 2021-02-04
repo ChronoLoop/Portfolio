@@ -27,7 +27,11 @@ const about = () => {
                             become the most effective and knowledgeable engineer I can be.
                         </p>
                         <p>
-                            You may find my most up-to-date resume <a href="#resume">here</a>.
+                            You may find my most up-to-date resume{' '}
+                            <a href="https://drive.google.com/file/d/1kJGr7eY8Tbo7PHgeRaJ06Haxwzuj3E3o/view?usp=sharing">
+                                here
+                            </a>
+                            .
                         </p>
                     </div>
                 </Col>

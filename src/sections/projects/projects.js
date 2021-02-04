@@ -12,6 +12,7 @@ import herokuIcon from '../../assets/img/skills/heroku.svg';
 import unityIcon from '../../assets/img/skills/unity.svg';
 import csharpIcon from '../../assets/img/skills/c-sharp.svg';
 import socketIoIcon from '../../assets/img/skills/socket-io.svg';
+import netlifyIcon from '../../assets/img/skills/netlify.svg';
 
 const Projects = [
     {
@@ -46,6 +47,13 @@ const Projects = [
             herokuIcon,
             webIcons
         ]
+    },
+    {
+        name: 'Portfolio',
+        description: 'A portfolio web app built with React.',
+        github: 'https://github.com/ikevinws/Portfolio',
+        visit: 'https://ikevin.netlify.app',
+        icons: [reactIcon, netlifyIcon, webIcons]
     }
 ];
 const ProjectsComponent = () => {
