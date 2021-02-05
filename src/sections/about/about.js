@@ -28,7 +28,11 @@ const about = () => {
                         </p>
                         <p>
                             You may find my most up-to-date resume{' '}
-                            <a href="https://drive.google.com/file/d/1kJGr7eY8Tbo7PHgeRaJ06Haxwzuj3E3o/view?usp=sharing">
+                            <a
+                                target="_blank"
+                                rel="noreferrer"
+                                href="https://drive.google.com/file/d/1kJGr7eY8Tbo7PHgeRaJ06Haxwzuj3E3o/view?usp=sharing"
+                            >
                                 here
                             </a>
                             .
