@@ -1,19 +1,22 @@
-import React from 'react';
-import Particles from 'react-particles-js';
+import { useCallback } from 'react';
+import Particles from 'react-tsparticles';
+import { loadFull } from 'tsparticles';
 import ParticlesConfig from './particles.config';
+import './particles.scss';
 
 const ParticlesComponent = () => {
+    const particlesInit = useCallback(async (engine) => {
+        await loadFull(engine);
+    }, []);
+    const particlesLoaded = useCallback(async (container) => {
+        container.play();
+    }, []);
     return (
         <Particles
-            params={ParticlesConfig}
-            style={{
-                position: 'absolute',
-                zIndex: 1,
-                left: 0,
-                right: 0,
-                bottom: 0,
-                top: 0
-            }}
+            init={particlesInit}
+            loaded={particlesLoaded}
+            options={ParticlesConfig}
+            canvasClassName="particles-canvas"
         />
     );
 };

@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer';
 import './about.scss';
 import UndrawImage from '../../assets/img/undraw/undraw_programming_2svr.svg';
 
-const about = () => {
+const About = () => {
     const { ref, inView } = useInView({
         threshold: 0.5,
         triggerOnce: true
@@ -52,4 +52,4 @@ const about = () => {
     );
 };
 
-export default about;
+export default About;
