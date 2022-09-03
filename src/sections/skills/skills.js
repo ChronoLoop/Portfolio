@@ -10,7 +10,7 @@ const skills = [
     {
         heading: 'Languages',
         icon: FaCode,
-        items: ['JavaScript', 'C++', 'C#', 'Java']
+        items: ['TypeScript/JavaScript', 'Go', 'C++', 'C#', 'Java']
     },
     {
         heading: 'Front-end Development',
@@ -25,7 +25,7 @@ const skills = [
     {
         heading: 'Tools',
         icon: FaToolbox,
-        items: ['Git', 'Bash', 'Unity', 'Heroku', 'Netlify']
+        items: ['Git', 'Bash', 'Unity', 'Heroku', 'Netlify', 'Railway']
     }
 ];
 

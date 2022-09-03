@@ -11,7 +11,7 @@ const Title = () => {
             <div className="sub">
                 <Typewriter
                     onInit={(typewriter) => {
-                        typewriter.pauseFor(300).typeString('Full-Stack Web Developer').start();
+                        typewriter.pauseFor(300).typeString('Software Engineer').start();
                     }}
                     options={{
                         loop: false,

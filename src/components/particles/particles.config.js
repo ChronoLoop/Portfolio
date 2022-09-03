@@ -1,12 +1,16 @@
 const particleConfig = {
     fullScreen: { enable: false },
+    detectRetina: true,
     particles: {
-        autoPlay: false,
+        reduceDuplicates: true,
         number: {
-            value: 30,
-            limit: 40
+            value: 40,
+            limit: 50,
+            density: {
+                enable: true,
+                area: 800
+            }
         },
-
         color: {
             value: '#FFFAFA'
         },
@@ -20,13 +24,11 @@ const particleConfig = {
                 sides: 5
             }
         },
-
         opacity: {
             value: { min: 0.1, max: 0.45 }
         },
-
         size: {
-            value: { min: 1, max: 15 },
+            value: { min: 1, max: 11 },
             animation: {
                 enable: true,
                 speed: 5,
@@ -34,7 +36,6 @@ const particleConfig = {
                 sync: false
             }
         },
-
         move: {
             enable: true,
             speed: 1,
@@ -52,9 +53,7 @@ const particleConfig = {
             duration: 5,
             count: 1
         }
-    },
-
-    detectRetina: true
+    }
 };
 
 export default particleConfig;
