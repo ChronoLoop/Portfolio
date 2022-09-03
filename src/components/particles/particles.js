@@ -9,14 +9,9 @@ const ParticlesComponent = () => {
         await loadFull(engine);
     }, []);
 
-    const particlesLoaded = useCallback(async (container) => {
-        container.play();
-    }, []);
-
     return (
         <Particles
             init={particlesInit}
-            loaded={particlesLoaded}
             options={ParticlesConfig}
             canvasClassName="particles-canvas"
         />

@@ -5,11 +5,7 @@ const particleConfig = {
         reduceDuplicates: true,
         number: {
             value: 40,
-            limit: 50,
-            density: {
-                enable: true,
-                area: 800
-            }
+            limit: 50
         },
         color: {
             value: '#FFFAFA'
