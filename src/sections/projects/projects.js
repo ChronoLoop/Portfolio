@@ -19,7 +19,7 @@ const Projects = [
         name: 'MyMovieList',
         description:
             'MyMovieList is a simple database web app where users can search for movies and review and rate movies, and admins can add, update, or delete movies.',
-        github: 'https://www.github.com/ikevinws/MyMovieList',
+        github: 'https://www.github.com/ChronoLoop/MyMovieList',
         visit: 'https://mymovielist.up.railway.app/',
         icons: [reactIcon, nodejsIcon, express, mongodbIcon, railwayIcon, webIcons]
     },
@@ -27,7 +27,7 @@ const Projects = [
         name: 'TypeWars',
         description:
             'Typewars is an online competitive typing game where players can race against each other in real-time.',
-        github: 'https://github.com/ikevinws/TypeWars',
+        github: 'https://github.com/ChronoLoop/TypeWars',
         visit: 'https://typewars.up.railway.app',
         icons: [reactIcon, nodejsIcon, express, mongodbIcon, socketIoIcon, railwayIcon, webIcons]
     },
@@ -35,7 +35,7 @@ const Projects = [
         name: 'Tower of Hanoi',
         description:
             'A full-stack (MERN) web app for the Tower of Hanoi game where players can create accounts, which will allow scores to be posted onto a leaderboard. The game was built in Unity3D and exported as a WebGL.',
-        github: 'https://www.github.com/ikevinws/TowerOfHanoi_WebApp',
+        github: 'https://www.github.com/ChronoLoop/TowerOfHanoi_WebApp',
         visit: 'https://tower-of-hanoi.up.railway.app',
         icons: [
             unityIcon,
@@ -51,7 +51,7 @@ const Projects = [
     {
         name: 'Portfolio',
         description: 'A portfolio web app built with React.',
-        github: 'https://github.com/ikevinws/Portfolio',
+        github: 'https://github.com/ChronoLoop/Portfolio',
         visit: 'https://ikevin.netlify.app',
         icons: [reactIcon, netlifyIcon, webIcons]
     }

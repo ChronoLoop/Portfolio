@@ -13,7 +13,7 @@ const Social = ({ footer }) => {
                 </li>
                 <li>
                     <a
-                        href="https://www.github.com/ikevinws"
+                        href="https://www.github.com/ChronoLoop"
                         rel="noopener noreferrer"
                         target="_blank"
                         className="icon-container github"
