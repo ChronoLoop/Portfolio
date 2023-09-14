@@ -13,15 +13,35 @@ import csharpIcon from '../../assets/img/skills/c-sharp.svg';
 import socketIoIcon from '../../assets/img/skills/socket-io.svg';
 import netlifyIcon from '../../assets/img/skills/netlify.svg';
 import railwayIcon from '../../assets/img/skills/railway.svg';
+import goIcon from '../../assets/img/skills/go.svg';
+import dockerIcon from '../../assets/img/skills/docker.svg';
+import postgresqlIcon from '../../assets/img/skills/postgresql.svg';
+import typescriptIcon from '../../assets/img/skills/typescript.svg';
 
 const Projects = [
+    {
+        name: 'Readit',
+        description:
+            'A full-stack web application replicating key features of Reddit, including user authentication, subreddits, post creation, and commenting functionality.',
+        github: 'https://github.com/ChronoLoop/Readit',
+        visit: 'https://readit.up.railway.app/',
+        icons: [
+            goIcon,
+            typescriptIcon,
+            reactIcon,
+            postgresqlIcon,
+            webIcons,
+            dockerIcon,
+            railwayIcon
+        ]
+    },
     {
         name: 'MyMovieList',
         description:
             'MyMovieList is a simple database web app where users can search for movies and review and rate movies, and admins can add, update, or delete movies.',
         github: 'https://www.github.com/ChronoLoop/MyMovieList',
         visit: 'https://mymovielist.up.railway.app/',
-        icons: [reactIcon, nodejsIcon, express, mongodbIcon, railwayIcon, webIcons]
+        icons: [reactIcon, nodejsIcon, express, mongodbIcon, dockerIcon, railwayIcon, webIcons]
     },
     {
         name: 'TypeWars',
@@ -29,7 +49,16 @@ const Projects = [
             'Typewars is an online competitive typing game where players can race against each other in real-time.',
         github: 'https://github.com/ChronoLoop/TypeWars',
         visit: 'https://typewars.up.railway.app',
-        icons: [reactIcon, nodejsIcon, express, mongodbIcon, socketIoIcon, railwayIcon, webIcons]
+        icons: [
+            reactIcon,
+            nodejsIcon,
+            express,
+            mongodbIcon,
+            socketIoIcon,
+            dockerIcon,
+            railwayIcon,
+            webIcons
+        ]
     },
     {
         name: 'Tower of Hanoi',
@@ -44,6 +73,7 @@ const Projects = [
             nodejsIcon,
             express,
             mongodbIcon,
+            dockerIcon,
             railwayIcon,
             webIcons
         ]
