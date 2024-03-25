@@ -1,6 +1,6 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
-import './skill.scss';
+import './Skill.scss';
 
 const Skill = ({ skill }) => {
     const { ref, inView } = useInView({

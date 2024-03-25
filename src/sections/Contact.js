@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import './contact.scss';
+import './Contact.scss';
 import { Container, Alert } from 'react-bootstrap';
 import { FaEnvelope, FaLinkedinIn } from 'react-icons/fa';
-import ContactForm from '../../components/contactForm/contactForm';
+import ContactForm from '../components/ContactForm';
 
 const Contact = () => {
     const [showError, setShowError] = useState(false);

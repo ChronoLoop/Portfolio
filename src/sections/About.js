@@ -1,8 +1,8 @@
 import React from 'react';
 import { Image, Col } from 'react-bootstrap';
 import { useInView } from 'react-intersection-observer';
-import './about.scss';
-import UndrawImage from '../../assets/img/undraw/undraw_programming_2svr.svg';
+import './About.scss';
+import UndrawImage from '../assets/img/undraw/undraw_programming_2svr.svg';
 
 const About = () => {
     const { ref, inView } = useInView({

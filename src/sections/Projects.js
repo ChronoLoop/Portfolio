@@ -1,24 +1,48 @@
 import React from 'react';
-import { CardDeck } from 'react-bootstrap';
-import './projects.scss';
-import ProjectCard from '../../components/projectCard/projectCard';
+import { Col, Row } from 'react-bootstrap';
+import './Projects.scss';
+import ProjectCard from '../components/ProjectCard';
 // icons
-import webIcons from '../../assets/img/skills/html-css-js.svg';
-import reactIcon from '../../assets/img/skills/react.svg';
-import nodejsIcon from '../../assets/img/skills/nodejs.svg';
-import express from '../../assets/img/skills/express.svg';
-import mongodbIcon from '../../assets/img/skills/mongodb.svg';
-import unityIcon from '../../assets/img/skills/unity.svg';
-import csharpIcon from '../../assets/img/skills/c-sharp.svg';
-import socketIoIcon from '../../assets/img/skills/socket-io.svg';
-import netlifyIcon from '../../assets/img/skills/netlify.svg';
-import railwayIcon from '../../assets/img/skills/railway.svg';
-import goIcon from '../../assets/img/skills/go.svg';
-import dockerIcon from '../../assets/img/skills/docker.svg';
-import postgresqlIcon from '../../assets/img/skills/postgresql.svg';
-import typescriptIcon from '../../assets/img/skills/typescript.svg';
+import webIcons from '../assets/img/skills/html-css-js.svg';
+import reactIcon from '../assets/img/skills/react.svg';
+import nodejsIcon from '../assets/img/skills/nodejs.svg';
+import express from '../assets/img/skills/express.svg';
+import mongodbIcon from '../assets/img/skills/mongodb.svg';
+import unityIcon from '../assets/img/skills/unity.svg';
+import csharpIcon from '../assets/img/skills/c-sharp.svg';
+import socketIoIcon from '../assets/img/skills/socket-io.svg';
+import netlifyIcon from '../assets/img/skills/netlify.svg';
+import railwayIcon from '../assets/img/skills/railway.svg';
+import goIcon from '../assets/img/skills/go.svg';
+import dockerIcon from '../assets/img/skills/docker.svg';
+import postgresqlIcon from '../assets/img/skills/postgresql.svg';
+import typescriptIcon from '../assets/img/skills/typescript.svg';
+
+import solidIcon from '../assets/img/skills/solid.svg';
+import tailwindIcon from '../assets/img/skills/tailwindcss.svg';
+import graphqlIcon from '../assets/img/skills/graphql.svg';
+import amazonS3Icon from '../assets/img/skills/amazon-s3.svg';
 
 const Projects = [
+    {
+        name: 'OnePieceQL',
+        description:
+            'A GraphQL API that provides extensive data about the One Piece universe, a popular manga and anime series.',
+        github: 'https://github.com/ChronoLoop/onepieceQL',
+        visit: 'https://onepieceql.up.railway.app/',
+        icons: [
+            goIcon,
+            typescriptIcon,
+            solidIcon,
+            tailwindIcon,
+            postgresqlIcon,
+            graphqlIcon,
+            amazonS3Icon,
+            webIcons,
+            dockerIcon,
+            railwayIcon
+        ]
+    },
     {
         name: 'Readit',
         description:
@@ -90,12 +114,11 @@ const ProjectsComponent = () => {
     return (
         <section id="projects" className="project section-padding">
             <h1>Projects</h1>
-            <CardDeck>
+            <Row>
                 {Projects.map((project, index) => {
-                    // eslint-disable-next-line react/no-array-index-key
                     return <ProjectCard project={project} key={index} />;
                 })}
-            </CardDeck>
+            </Row>
         </section>
     );
 };

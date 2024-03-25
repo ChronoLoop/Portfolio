@@ -1,6 +1,6 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
-import './title.scss';
+import './Title.scss';
 
 const Title = () => {
     return (

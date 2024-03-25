@@ -47,7 +47,10 @@ section {
 }
 .section-padding {
     padding: 2.5rem !important;
+    scroll-margin: 3.5rem;
+    
     @media screen and (min-width: 36em) {
+        scroll-margin: 3.875rem;
         padding: 3rem !important;
     }
     @media screen and (min-width: 48em) {

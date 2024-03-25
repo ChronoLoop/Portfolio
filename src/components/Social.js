@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaEnvelope, FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import './social.scss';
+import './Social.scss';
 
 const Social = ({ footer }) => {
     return (

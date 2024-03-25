@@ -1,10 +1,10 @@
 import React from 'react';
-import './skills.scss';
+import './Skills.scss';
 import { Col, Image } from 'react-bootstrap';
 import { FaCode, FaDatabase, FaToolbox } from 'react-icons/fa';
 import { GoBrowser } from 'react-icons/go';
-import UndrawImage from '../../assets/img/undraw/undraw_code_review_l1q91.svg';
-import Skill from '../../components/skill/skill';
+import UndrawImage from '../assets/img/undraw/undraw_code_review_l1q91.svg';
+import Skill from '../components/Skill';
 
 const skills = [
     {
@@ -15,17 +15,17 @@ const skills = [
     {
         heading: 'Front-end Development',
         icon: GoBrowser,
-        items: ['HTML', 'CSS', 'React', 'Sass', 'Bootstrap']
+        items: ['HTML', 'CSS/SCSS', 'React', 'Solid.js', 'Tailwind CSS', 'Bootstrap', 'Redux']
     },
     {
         heading: 'Back-end Development',
         icon: FaDatabase,
-        items: ['Node.JS', 'Express', 'Passport.JS', 'MongoDB', 'SQL']
+        items: ['Node.JS', 'Express', 'Passport.JS', 'MongoDB', 'SQL (PostgreSQL)']
     },
     {
         heading: 'Tools',
         icon: FaToolbox,
-        items: ['Git', 'Bash', 'Unity', 'Heroku', 'Netlify', 'Railway']
+        items: ['Git', 'Bash', 'Docker', 'AWS (S3)', 'Unity', 'Netlify', 'Railway']
     }
 ];
 
