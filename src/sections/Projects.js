@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Row } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 import './Projects.scss';
 import ProjectCard from '../components/ProjectCard';
 // icons
