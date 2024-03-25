@@ -46,7 +46,7 @@ const Contact = () => {
                 <div className="d-flex flex-column mt-4 w-100">
                     <div className="contact-container mb-3">
                         <h5>
-                            <FaEnvelope className="mr-1" />
+                            <FaEnvelope className="me-2" />
                             Email:
                         </h5>
                         <div>
@@ -62,7 +62,7 @@ const Contact = () => {
                     </div>
                     <div className="contact-container">
                         <h5>
-                            <FaLinkedinIn className="mr-1" />
+                            <FaLinkedinIn className="me-2" />
                             Linkedin
                         </h5>
                         <div>

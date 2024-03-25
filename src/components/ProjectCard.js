@@ -31,7 +31,7 @@ const ProjectCard = ({ project }) => {
                                 target="_blank"
                                 className="card-btn"
                             >
-                                <FaCode className="mr-1" />
+                                <FaCode className="me-1" />
                                 Code
                             </Button>
                         ) : null}
@@ -44,7 +44,7 @@ const ProjectCard = ({ project }) => {
                                 target="_blank"
                                 className="card-btn"
                             >
-                                <FaArrowRight className="mr-1" />
+                                <FaArrowRight className="me-1" />
                                 Visit
                             </Button>
                         ) : null}
