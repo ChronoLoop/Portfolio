@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 const ContactForm = ({ emailErrorHandler, emailSuccessHandler, resetAlerts }) => {
     const [validated, setValidated] = useState(false);
@@ -20,12 +20,9 @@ const ContactForm = ({ emailErrorHandler, emailSuccessHandler, resetAlerts }) =>
 
     const sendEmail = async (data) => {
         try {
-            await emailjs.send(
-                'service_r9u5wuc',
-                'template_vkvcwvc',
-                data,
-                'user_y7mncT0M4K0nUfhB2xhoc'
-            );
+            await emailjs.send('service_ifigolk', 'template_zeqgs4w', data, {
+                publicKey: 'g7YkFBJfcnghya2Us'
+            });
             emailSuccessHandler();
         } catch (err) {
             emailErrorHandler();
